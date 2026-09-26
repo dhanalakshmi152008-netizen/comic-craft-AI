@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>ComicCraft AI</title>
+<style>*{font-family:sans-serif;box-sizing:border-box}body{background:#fff8e7;padding:20px}h1{text-align:center}h1 span{color:#ff6f00}.card{max-width:700px;margin:20px auto;background:white;padding:30px;border-radius:15px;box-shadow:0 5px 20px #0002}label{display:block;font-weight:bold;margin:15px 0 5px}input,textarea,select{width:100%;padding:12px;border:2px solid #ddd;border-radius:8px}textarea{height:90px}button{width:100%;padding:14px;background:#ff6f00;color:white;border:none;border-radius:10px;font-size:16px;font-weight:bold;margin-top:20px;cursor:pointer}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}</style>
+</head><body>
+<h1>ComicCraft <span>AI</span> 🎨</h1>
+<p style="text-align:center">Create magical comics with AI!</p>
+<div class="card">
+<h3 style="text-align:center">✨ Comic Generator Form</h3>
+<form action="/generate" method="post">
+<label>📖 Story Prompt</label><textarea name="story_prompt" placeholder="A brave fox in forest..." required></textarea>
+<label>🦊 Main Character Name</label><input type="text" name="character_name" placeholder="Foxy" required>
+<div class="row"><div><label>🏫 Setting</label><select name="setting"><option>forest</option><option>school</option><option>space</option><option>city</option></select></div><div><label>🎭 Story Tone</label><select name="tone"><option>dramatic</option><option>light-hearted</option><option>poetic</option><option>funny</option></select></div></div>
+<label>🎨 Art Style</label><select name="art_style"><option>anime</option><option>pixel art</option><option>comic book</option><option>realistic</option></select>
+<button type="submit">🚀 Generate My Comic</button>
+</form></div></body></html>

@@ -1,0 +1,1 @@
+﻿def dummy(): return True
